@@ -1,12 +1,11 @@
-import './App.css';
-import Navbar from './Pages/Shared/Navbar';
+import React from 'react';
 
-function App() {
-  return (
-    <div>
-     <Navbar/>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            hello
+        </div>
+    );
+};
 
 export default App;
