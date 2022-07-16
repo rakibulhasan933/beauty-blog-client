@@ -8,7 +8,6 @@ const App = () => {
     return (
         <div>
             <TopBer />
-            <Home />
         </div>
     );
 };
