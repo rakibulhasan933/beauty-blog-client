@@ -17,7 +17,7 @@ const SideBer = () => {
                 </p>
             </div>
             <div className="sidebarItem">
-                <span className="sidebarTitle">CATEGORIES</span>
+                <span className="sidebarTittle">CATEGORIES</span>
                 <ul className="sidebarList">
                     <li className="sidebarListItem">
                         <Link className="link" to="/">
@@ -52,7 +52,7 @@ const SideBer = () => {
                 </ul>
             </div>
             <div className="sidebarItem">
-                <span className="sidebarTitle">FOLLOW US</span>
+                <span className="sidebarTittle">FOLLOW US</span>
                 <div className="sidebarSocial">
                     <i className="sidebarIcon fab fa-facebook-square"></i>
                     <i className="sidebarIcon fab fa-instagram-square"></i>
