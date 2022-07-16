@@ -48,6 +48,8 @@
 
 .sidebarListItem {
     display: inline-block;
+    font-family: monospace;
+    font-weight: 400;
     width: 50%;
     margin-top: 15px;
     cursor: pointer;

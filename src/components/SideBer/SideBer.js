@@ -45,7 +45,7 @@ const SideBer = () => {
                         </Link>
                     </li>
                     <li className="sidebarListItem">
-                        <Link className="link" to="/">
+                        <Link className="link " to="/">
                             Cinema
                         </Link>
                     </li>
