@@ -17,16 +17,19 @@ const TopBer = () => {
                         <Link className='link' to='/'>HOME</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className='link' to='/'>ABOUT</Link>
+                        <Link className='link' to='/about'>ABOUT</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className="link" to='/'>CONTACT</Link>
+                        <Link className="link" to='/contact'>CONTACT</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className="link" to='/'>WRITE</Link>
+                        <Link className="link" to='/write'>WRITE</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className="link" to='/'>LOGOUT</Link>
+                        <Link className="link" to='/login'>LOGIN</Link>
+                    </li>
+                    <li className="topListItem">
+                        <Link className="link" to='/register'>REGISTER</Link>
                     </li>
                 </ul>
             </div>
