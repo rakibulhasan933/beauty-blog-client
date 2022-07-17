@@ -1,6 +1,6 @@
 import React from 'react';
 import './Settings.css';
-import Sidebar from '../Settings/Settings';
+import SideBer from '../../components/SideBer/SideBer';
 
 const Settings = () => {
     return (
@@ -38,7 +38,7 @@ const Settings = () => {
                     </button>
                 </form>
             </div>
-            <Sidebar />
+            <SideBer />
         </div>
     );
 };
