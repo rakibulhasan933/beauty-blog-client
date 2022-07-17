@@ -3,14 +3,14 @@ import './Write.css';
 
 const Write = () => {
     return (
-        <div className='write'>
+        <div className="write">
             <img
                 className="writeImg"
                 src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 alt=""
             />
-            <from className="writeForm">
-                <div className="writeFromGroup">
+            <form className="writeForm">
+                <div className="writeFormGroup">
                     <label htmlFor="fileInput">
                         <i className="writeIcon fas fa-plus"></i>
                     </label>
@@ -33,7 +33,7 @@ const Write = () => {
                 <button className="writeSubmit" type="submit">
                     Publish
                 </button>
-            </from>
+            </form>
         </div>
     );
 };
