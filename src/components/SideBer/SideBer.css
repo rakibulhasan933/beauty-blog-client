@@ -35,6 +35,10 @@
     height: 250px;
 }
 
+.sidebarItem ul li {
+    font-size: 15px;
+}
+
 .sidebarItem>p {
     padding: 30px;
     font-size: 15px;

@@ -19,36 +19,24 @@ const SideBer = () => {
             <div className="sidebarItem">
                 <span className="sidebarTittle">CATEGORIES</span>
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">
-                        <Link className="link" to="/">
-                            Life
-                        </Link>
-                    </li>
-                    <li className="sidebarListItem">
-                        <Link className="link" to="/">
-                            Music
-                        </Link>
-                    </li>
-                    <li className="sidebarListItem">
-                        <Link className="link" to="/">
-                            Sport
-                        </Link>
-                    </li>
-                    <li className="sidebarListItem">
-                        <Link className="link" to="/">
-                            Style
-                        </Link>
-                    </li>
-                    <li className="sidebarListItem">
-                        <Link className="link" to="/">
-                            Tech
-                        </Link>
-                    </li>
-                    <li className="sidebarListItem">
-                        <Link className="link " to="/">
-                            Cinema
-                        </Link>
-                    </li>
+                    <Link className="link" to="/">
+                        <li className="sidebarListItem">Life</li>
+                    </Link>
+                    <Link className="link" to="/">
+                        <li className="sidebarListItem">Music</li>
+                    </Link>
+                    <Link className="link" to="/">
+                        <li className="sidebarListItem">Sport</li>
+                    </Link>
+                    <Link className="link" to="/">
+                        <li className="sidebarListItem"> Style</li>
+                    </Link>
+                    <Link className="link" to="/">
+                        <li className="sidebarListItem">Tech</li>
+                    </Link>
+                    <Link className="link " to="/">
+                        <li className="sidebarListItem">Cinema</li>
+                    </Link>
                 </ul>
             </div>
             <div className="sidebarItem">
