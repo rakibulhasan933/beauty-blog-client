@@ -13,6 +13,7 @@ import Post from './components/Post/Post';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Footer from './components/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
+import Posts from './Pages/Posts/Posts';
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
                     <Route path='settings' element={<Settings />} />
                 </Route>
                 <Route path='/write' element={<Write />} />
+                <Route path='/posts' element={<Posts />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
