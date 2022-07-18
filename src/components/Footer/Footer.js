@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <hr />
-            <p className='footerCon font-monospace'>Copyright © 2022 RedQ, Inc.</p>
+            <p className='footerCon'>Copyright © 2022 RedQ, Inc.</p>
         </div>
     );
 };

@@ -1,6 +1,8 @@
 .footerCon {
     padding: 20px 0 20px 0;
     overflow: hidden;
-    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: monospace;
     text-align: center;
 }
