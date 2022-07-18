@@ -1,3 +1,11 @@
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
 .post {
     width: 385px;
     margin: 0px 25px 40px 25px;

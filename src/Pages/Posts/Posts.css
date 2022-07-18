@@ -1,0 +1,8 @@
+.posts {
+    display: flex;
+}
+
+.postMain {
+    flex: 9;
+    padding: 20px;
+}
