@@ -23,8 +23,8 @@ const App = () => {
                     <Route path='login' element={<Login />} />
                     <Route path='register' element={<Register />} />
                     <Route path='settings' element={<Settings />} />
-                    <Route path='write' element={<Write />} />
                 </Route>
+                <Route path='/write' element={<Write />} />
             </Routes>
         </div>
     );
