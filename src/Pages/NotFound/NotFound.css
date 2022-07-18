@@ -1,0 +1,27 @@
+.notFound {
+    display: flex;
+}
+
+.containPart {
+    margin-top: 220px;
+    padding: 40px;
+    flex: 8;
+    text-align: center;
+}
+
+.imgPart {
+    flex: 4;
+}
+
+.containPart h3 {
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.containPart p {
+    font-family: monospace;
+    font-size: 16px;
+    margin-bottom: 50px;
+}

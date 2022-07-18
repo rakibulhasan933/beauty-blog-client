@@ -12,6 +12,7 @@ import SinglePost from './components/SinglePost/SinglePost';
 import Post from './components/Post/Post';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Footer from './components/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
                     <Route path='settings' element={<Settings />} />
                 </Route>
                 <Route path='/write' element={<Write />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
         </div>
