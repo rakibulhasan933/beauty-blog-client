@@ -1,0 +1,7 @@
+.homeMain {
+    display: flex;
+}
+
+.outlet {
+    flex: 9;
+}
