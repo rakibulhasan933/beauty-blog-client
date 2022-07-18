@@ -18,14 +18,11 @@ const App = () => {
         <div>
             <TopBer />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/settings' element={<Settings />} />
-                <Route path='/write' element={<Write />} />
-                <Route path='/post' element={<PostsMain />}>
-                    <Route index element={<Post />} />
-                    <Route path=':id' element={<SinglePost />} />
+                <Route path='/' element={<Home />}>
+                    <Route path='login' element={<Login />} />
+                    <Route path='register' element={<Register />} />
+                    <Route path='settings' element={<Settings />} />
+                    <Route path='write' element={<Write />} />
                 </Route>
             </Routes>
         </div>

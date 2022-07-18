@@ -1,6 +1,5 @@
 import React from 'react';
 import './Settings.css';
-import SideBer from '../../components/SideBer/SideBer';
 
 const Settings = () => {
     return (
@@ -38,7 +37,6 @@ const Settings = () => {
                     </button>
                 </form>
             </div>
-            <SideBer />
         </div>
     );
 };
