@@ -11,8 +11,10 @@ const Login = () => {
                 <label>Password</label>
                 <input className="loginInput" type="password" placeholder="Enter your password..." />
                 <button className="loginButton">Login</button>
+                <br />
+                <button className="loginRegisterButton">Register</button>
             </form>
-            <button className="loginRegisterButton">Register</button>
+
         </div>
     );
 };

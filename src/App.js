@@ -11,6 +11,7 @@ import Write from './Pages/Write/Write';
 import SinglePost from './components/SinglePost/SinglePost';
 import Post from './components/Post/Post';
 import HomeMain from './Pages/HomeMain/HomeMain';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
                 </Route>
                 <Route path='/write' element={<Write />} />
             </Routes>
+            <Footer />
         </div>
     );
 };
