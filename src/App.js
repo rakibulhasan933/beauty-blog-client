@@ -9,7 +9,6 @@ import Register from './Pages/Register/Register';
 import Settings from './Pages/Settings/Settings';
 import Write from './Pages/Write/Write';
 import SinglePost from './components/SinglePost/SinglePost';
-import Post from './components/Post/Post';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Footer from './components/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
@@ -23,6 +22,7 @@ const App = () => {
             <TopBer />
             <Routes>
                 <Route path='/' element={<HomeMain />}>
+                    <Route index element={<Home />} />
                     <Route path='login' element={<Login />} />
                     <Route path='register' element={<Register />} />
                     <Route path='settings' element={<Settings />} />
