@@ -1,9 +1,9 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import SideBer from '../../components/SideBer/SideBer';
-import './Posts.css';
+import './PostsMain.css';
 
-const Posts = () => {
+const PostsMain = () => {
     return (
         <div className='posts'>
             <div className="postsMain">
@@ -14,4 +14,4 @@ const Posts = () => {
     );
 };
 
-export default Posts;
+export default PostsMain;
