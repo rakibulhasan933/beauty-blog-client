@@ -13,24 +13,24 @@ const TopBer = () => {
             </div>
             <div className="topCenter">
                 <ul className="topList">
-                    <li className="topListItem">
-                        <Link className='link' to='/'>HOME</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link className='link' to='/about'>ABOUT</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link className="link" to='/contact'>CONTACT</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link className="link" to='/write'>WRITE</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link className="link" to='/login'>LOGIN</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link className="link" to='/register'>REGISTER</Link>
-                    </li>
+                    <Link className='link' to='/'>
+                        <li className="topListItem">HOME </li>
+                    </Link>
+                    <Link className='link' to='/about'>
+                        <li className="topListItem">ABOUT</li>
+                    </Link>
+                    <Link className="link" to='/contact'>
+                        <li className="topListItem">CONTACT</li>
+                    </Link>
+                    <Link className="link" to='/write'>
+                        <li className="topListItem">WRITE</li>
+                    </Link>
+                    <Link className="link" to='/login'>
+                        <li className="topListItem">LOGIN</li>
+                    </Link>
+                    <Link className="link" to='/register'>
+                        <li className="topListItem">REGISTER</li>
+                    </Link>
                 </ul>
             </div>
             <div className="topRight">

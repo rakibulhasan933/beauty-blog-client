@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     z-index: 999;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: monospace;
 }
 
 .topLeft,
@@ -22,6 +22,10 @@
     flex: 6;
 }
 
+.topCenter ul li {
+    font-size: 20px;
+}
+
 .topList {
     display: flex;
     justify-content: center;
@@ -32,8 +36,9 @@
 
 .topListItem {
     margin-right: 20px;
-    font: 18px;
+    font: 24px;
     font-weight: 400;
+    font-family: monospace;
     cursor: pointer;
 }
 
