@@ -25,3 +25,13 @@
     font-size: 16px;
     margin-bottom: 50px;
 }
+
+.containPart span {
+    font-weight: 800;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.containPart span:hover {
+    color: red;
+}
