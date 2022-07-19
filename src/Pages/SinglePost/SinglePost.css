@@ -50,6 +50,8 @@
 
 .singlePostAuthor {
     margin-left: 5px;
+    font-weight: 200;
+    font-family: monospace;
 }
 
 .singlePostDesc {
