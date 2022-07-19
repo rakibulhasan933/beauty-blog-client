@@ -28,9 +28,6 @@ const TopBer = () => {
                     <Link className="link" to='/login'>
                         <li className="topListItem">LOGIN</li>
                     </Link>
-                    <Link className="link" to='/register'>
-                        <li className="topListItem">REGISTER</li>
-                    </Link>
                 </ul>
             </div>
             <div className="topRight">
