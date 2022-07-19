@@ -38,11 +38,14 @@
     border: none;
     padding: 20px;
     width: 70vw;
+    font-family: monospace;
+    font-weight: 400;
 }
 
 .writeInput::placeholder {
     color: rgb(189, 185, 185);
     font-weight: 400;
+    font-family: monospace;
 }
 
 .writeInput:focus {
@@ -54,6 +57,7 @@
     height: 100vh;
     font-family: inherit;
     font-size: 20px;
+    font-family: monospace;
 }
 
 .writeSubmit {
@@ -69,4 +73,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-family: monospace;
+    font-weight: 400;
 }
