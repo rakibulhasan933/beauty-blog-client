@@ -24,9 +24,7 @@ const SinglePost = () => {
                     <span>
                         Author:
                         <b className="singlePostAuthor">
-                            <Link className="link" to="/">
-                                Rakibul
-                            </Link>
+                            Rakibul
                         </b>
                     </span>
                     <span>1 day ago</span>
