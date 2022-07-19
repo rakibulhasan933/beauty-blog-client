@@ -1,20 +1,15 @@
 import React from 'react';
 import './Login.css';
+import GoogleButton from 'react-google-button'
+
 
 const Login = () => {
     return (
         <div className='login'>
-            <span className="loginTitle">Login</span>
-            <form className="loginForm">
-                <label>Email</label>
-                <input className="loginInput" type="text" placeholder="Enter your email..." />
-                <label>Password</label>
-                <input className="loginInput" type="password" placeholder="Enter your password..." />
-                <button className="loginButton">Login</button>
-                <br />
-                <button className="loginRegisterButton">Register</button>
-            </form>
-
+            <span className="loginTitle">Login in Google</span>
+            <GoogleButton
+                onClick={() => { console.log('Google button clicked') }}
+            />
         </div>
     );
 };
