@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Settings from './Pages/Settings/Settings';
 import Write from './Pages/Write/Write';
-import SinglePost from './components/SinglePost/SinglePost';
+import SinglePost from './Pages/SinglePost/SinglePost';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Footer from './components/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
