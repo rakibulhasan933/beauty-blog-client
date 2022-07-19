@@ -4,8 +4,6 @@ import './App.css';
 import TopBer from './components/TopBer/TopBer';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
-import PostsMain from './Pages/PostsMain/PostsMain';
-import Register from './Pages/Register/Register';
 import Settings from './Pages/Settings/Settings';
 import Write from './Pages/Write/Write';
 import SinglePost from './components/SinglePost/SinglePost';
@@ -21,13 +19,14 @@ const App = () => {
         <div>
             <TopBer />
             <Routes>
-                <Route path='/' element={<HomeMain />}>
-                    <Route index element={<Home />} />
-                    <Route path='login' element={<Login />} />
+                <Route path='/' element={<Home />} />
+                <Route path='login' element={<Login />} />
+                <Route path='/blogs' element={<HomeMain />}>
+                    <Route index element={<Posts />} />
+                    <Route path=':id' element={<SinglePost />} />
                     <Route path='settings' element={<Settings />} />
                 </Route>
                 <Route path='/write' element={<Write />} />
-                <Route path='/posts' element={<Posts />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />

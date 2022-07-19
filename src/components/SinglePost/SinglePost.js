@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './SinglePost.css';
 
 const SinglePost = () => {
+    const id = useParams();
+    console.log(id);
     return (
         <div className='singlePost'>
             <div className="singlePostWrapper">
