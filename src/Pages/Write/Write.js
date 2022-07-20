@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Write.css';
 
 const Write = () => {
+    const [name, setName] = useState('rakibul');
+    const [Tittle, setTittle] = useState('');
+    const [dec, setDec] = useState('');
     return (
         <div className="write">
             <img
@@ -18,6 +21,8 @@ const Write = () => {
                     <input
                         className="writeInput"
                         placeholder="Title"
+                        required
+                        onChange={e => setTittle(e.target.value)}
                         type="text"
                         autoFocus={true}
                     />
@@ -26,6 +31,8 @@ const Write = () => {
                     <textarea
                         className="writeInput writeText"
                         placeholder="Tell your story...."
+                        required
+                        onChange={e => setDec(e.target.value)}
                         type="text"
                         autoFocus={true}
                     />
