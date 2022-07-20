@@ -6,9 +6,11 @@ const Write = () => {
     const [tittle, setTittle] = useState('');
     const [dec, setDec] = useState('');
     const [image, setImage] = useState(null);
+    const [success, setSuccess] = useState(false);
 
     const handleSubmit = e => {
         e.preventDefault();
+
         if (!image) {
             return;
         }
@@ -23,8 +25,11 @@ const Write = () => {
             body: fromData
         })
             .then(response => response.json())
-            .then(result => {
-                console.log('Success:', result);
+            .then(data => {
+                if (data.insertedId) {
+                    setSuccess('Blogs added in Successfully');
+                    e.target.reset();
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -70,7 +75,9 @@ const Write = () => {
                 <button className="writeSubmit" type="submit">
                     Publish
                 </button>
+                {success && <p style={{ color: 'green' }}>{success}</p>}
             </form>
+
         </div>
     );
 };
