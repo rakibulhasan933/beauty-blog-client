@@ -49,7 +49,7 @@ const Write = () => {
                     </label>
                     <input id="fileInput"
                         type="file"
-                        accept='image/png'
+                        accept='image/jpg'
                         onChange={e => setImage(e.target.files[0])}
                         required
 
