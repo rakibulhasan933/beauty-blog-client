@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
 import './Posts.css';
 const data = [
@@ -47,10 +47,16 @@ const data = [
 ];
 
 const Posts = () => {
+    const [blogs, setBlogs] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/blogs')
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
     return (
         <div className='posts'>
             {
-                data.map(item => <Post key={item._id} item={item} ></Post>)
+                blogs.map(item => <Post key={item._id} item={item} ></Post>)
             }
         </div>
     );
