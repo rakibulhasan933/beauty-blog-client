@@ -7,6 +7,7 @@ const Write = () => {
     const [dec, setDec] = useState('');
     const [image, setImage] = useState(null);
     const [success, setSuccess] = useState(false);
+    const time = new Date();
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -19,6 +20,7 @@ const Write = () => {
         fromData.append('tittle', tittle);
         fromData.append('dec', dec);
         fromData.append('image', image);
+        fromData.append('time', time);
 
         fetch('http://localhost:5000/createBlogs', {
             method: 'POST',
