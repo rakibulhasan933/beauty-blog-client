@@ -56,7 +56,7 @@ const Posts = () => {
     return (
         <div className='posts'>
             {
-                data.map(item => <Post key={item._id} item={item} ></Post>)
+                blogs.map(item => <Post key={item._id} item={item} ></Post>)
             }
         </div>
     );

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './Post.css';
 
 const Post = ({ item }) => {
-    const { _id, img, name, time, dec } = item;
+    const { _id, image, name, time, dec } = item;
     return (
         <div>
             <Link className="link" to={`${_id}`}>
                 <div className='post'>
-                    <img className='postImg' src={img} alt="" />
+                    <img className='postImg' src={`data:image/jpg;base64,${image}`} alt="" />
                     <div className="postInfo">
                         <div className="postCats">
                             <span className="postCat">
