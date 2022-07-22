@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header/Header';
-import SideBer from '../../components/SideBer/SideBer';
 import Spinner from '../../components/Spinner/Spinner';
 import HomeBlogs from '../HomeBlogs/HomeBlogs';
 import './Home.css';
@@ -21,14 +19,12 @@ const Home = () => {
 
     return isLoading ? <Spinner /> : (
         <div>
-            <Header />
             <div className="home">
                 <div className="blogs">
                     {
                         blogs.map(item => <HomeBlogs key={item._id} item={item} />)
                     }
                 </div>
-                <SideBer />
             </div>
         </div>
     );
