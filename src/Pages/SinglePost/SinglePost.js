@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Spinner from '../../components/Spinner/Spinner';
 import './SinglePost.css';
 
 const SinglePost = () => {
     const { id } = useParams();
     const [blogs, setBlogs] = useState({});
+    const [isLoading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
         fetch(`http://localhost:5000/blogs/${id}`)
             .then(res => res.json())
-            .then(data => setBlogs(data))
+            .then(data => {
+                setBlogs(data);
+                setLoading(false);
+            })
     }, [id]);
 
     const { name, tittle, time, image, dec } = blogs;
-    return (
+
+    return isLoading ? <Spinner /> : (
         <div className='singlePost'>
             <div className="singlePostWrapper">
                 <img
