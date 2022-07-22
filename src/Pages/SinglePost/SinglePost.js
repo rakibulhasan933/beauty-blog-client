@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './SinglePost.css';
 
 const SinglePost = () => {
@@ -7,7 +7,7 @@ const SinglePost = () => {
     const [blogs, setBlogs] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:3000/blogs/${id}`)
+        fetch(`http://localhost:5000/blogs/${id}`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [id]);
@@ -35,7 +35,7 @@ const SinglePost = () => {
                             {name}
                         </b>
                     </span>
-                    <span>{time}day ago</span>
+                    <span>{time}</span>
                 </div>
                 <p className="singlePostDesc">
                     {dec}
