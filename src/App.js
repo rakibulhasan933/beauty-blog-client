@@ -7,10 +7,10 @@ import Login from './Pages/Login/Login';
 import Settings from './Pages/Settings/Settings';
 import Write from './Pages/Write/Write';
 import SinglePost from './Pages/SinglePost/SinglePost';
-import HomeMain from './Pages/HomeMain/HomeMain';
 import Footer from './components/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
 import Posts from './Pages/Posts/Posts';
+import BlogMain from './Pages/BlogMain/BlogMain';
 
 
 
@@ -21,7 +21,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='login' element={<Login />} />
-                <Route path='/blogs' element={<HomeMain />}>
+                <Route path='/blogs' element={<BlogMain />}>
                     <Route index element={<Posts />} />
                     <Route path=':id' element={<SinglePost />} />
                     <Route path='settings' element={<Settings />} />

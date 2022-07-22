@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import SideBer from '../../components/SideBer/SideBer';
-import './HomeMain.css';
+import './BlogMain.css';
 
 const HomeMain = () => {
     return (
