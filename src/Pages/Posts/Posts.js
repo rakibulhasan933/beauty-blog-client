@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
 import './Posts.css';
+import Spinner from '../../components/Spinner/Spinner';
 const data = [
     {
         _id: 0,
@@ -48,15 +49,23 @@ const data = [
 
 const Posts = () => {
     const [blogs, setBlogs] = useState([]);
+    const [isLoading, SetLoading] = useState(false);
+
     useEffect(() => {
+        SetLoading(true);
         fetch('http://localhost:5000/blogs')
             .then(res => res.json())
-            .then(data => setBlogs(data))
+            .then(data => {
+                setBlogs(data);
+                SetLoading(false);
+            })
     }, [])
-    return (
+    return isLoading ? <Spinner /> : (
         <div className='posts'>
             {
-                blogs.map(item => <Post key={item._id} item={item} ></Post>)
+                blogs.map(item =>
+                    <Post key={item._id} item={item} ></Post>
+                )
             }
         </div>
     );

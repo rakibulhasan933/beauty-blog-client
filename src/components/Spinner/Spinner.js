@@ -1,10 +1,13 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import './Spinner.css'
 
 const Spinner = () => {
     return (
         <div>
-            <h1 className='load'>Loading...</h1>
+            <Fade left cascade>
+                <h1 className='load'>Loading...</h1>
+            </Fade>
         </div>
     );
 };

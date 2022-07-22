@@ -1,5 +1,7 @@
 .load {
+    margin: 200px;
     text-align: center;
     font-family: monospace;
     color: black;
+    font-weight: 400;
 }
