@@ -12,7 +12,7 @@ const Home = () => {
         fetch('http://localhost:5000/blogs')
             .then(res => res.json())
             .then(data => {
-                setBlogs(data.slice(0, 6));
+                setBlogs(data.slice(0, 4));
                 SetLoading(false);
             });
     }, [])
