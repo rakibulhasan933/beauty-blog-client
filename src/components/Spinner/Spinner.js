@@ -6,7 +6,7 @@ const Spinner = () => {
     return (
         <div>
             <Fade left cascade>
-                <h1 className='load'>Loading...</h1>
+                <h3 className='load'>Loading...</h3>
             </Fade>
         </div>
     );
