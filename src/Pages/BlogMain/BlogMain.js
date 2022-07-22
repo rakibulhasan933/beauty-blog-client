@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import SideBer from '../../components/SideBer/SideBer';
 import './BlogMain.css';
 
-const HomeMain = () => {
+const BlogMain = () => {
     return (
         <div className='homeMain'>
             <div className="outlet">
@@ -14,4 +14,4 @@ const HomeMain = () => {
     );
 };
 
-export default HomeMain;
+export default BlogMain;

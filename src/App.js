@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound';
 import Posts from './Pages/Posts/Posts';
 import BlogMain from './Pages/BlogMain/BlogMain';
-import HomeMain from './Pages/BlogMain/BlogMain';
+import BlogMain from './Pages/BlogMain/BlogMain';
 
 
 
@@ -19,7 +19,7 @@ const App = () => {
         <div>
             <TopBer />
             <Routes>
-                <Route path='/' element={<HomeMain />} />
+                <Route path='/' element={<BlogMain />} />
                 <Route path='login' element={<Login />} />
                 <Route path='/blogs' element={<BlogMain />}>
                     <Route index element={<Posts />} />
