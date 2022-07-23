@@ -1,0 +1,8 @@
+.contact {
+    display: flex;
+}
+
+.contactWrapper {
+    flex: 9;
+    text-align: center;
+}
