@@ -11,6 +11,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Posts from './Pages/Posts/Posts';
 import BlogMain from './Pages/BlogMain/BlogMain';
 import HomeMain from './Pages/HomeMain/HomeMain';
+import Contact from './Pages/Contact/Contact';
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<HomeMain />} />
                 <Route path='login' element={<Login />} />
+                <Route path='/contact' element={<Contact />} />
                 <Route path='/blogs' element={<BlogMain />}>
                     <Route index element={<Posts />} />
                     <Route path=':id' element={<SinglePost />} />
