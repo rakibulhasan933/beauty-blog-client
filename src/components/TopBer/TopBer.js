@@ -16,9 +16,6 @@ const TopBer = () => {
                     <Link className='link' to='/'>
                         <li className="topListItem">HOME </li>
                     </Link>
-                    <Link className='link' to='/about'>
-                        <li className="topListItem">ABOUT</li>
-                    </Link>
                     <Link className="link" to='/contact'>
                         <li className="topListItem">CONTACT</li>
                     </Link>
