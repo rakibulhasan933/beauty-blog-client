@@ -12,12 +12,13 @@ import Posts from './Pages/Posts/Posts';
 import BlogMain from './Pages/BlogMain/BlogMain';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Contact from './Pages/Contact/Contact';
+import AuthProvider from './context/AuthProvider';
 
 
 
 const App = () => {
     return (
-        <div>
+        <AuthProvider>
             <TopBer />
             <Routes>
                 <Route path='/' element={<HomeMain />} />
@@ -32,7 +33,7 @@ const App = () => {
                 <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
-        </div>
+        </AuthProvider>
     );
 };
 
