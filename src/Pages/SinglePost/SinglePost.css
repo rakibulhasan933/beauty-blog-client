@@ -21,6 +21,15 @@
     font-family: monospace;
 }
 
+.topImg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .singlePostEdit {
     float: right;
     font-size: 18px;

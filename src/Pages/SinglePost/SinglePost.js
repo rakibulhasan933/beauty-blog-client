@@ -18,7 +18,8 @@ const SinglePost = () => {
             })
     }, [id]);
 
-    const { name, tittle, time, image, dec } = blogs;
+    const { name, tittle, time, image, photo, dec } = blogs;
+    console.log('blog', blogs);
 
     return isLoading ? <Spinner /> : (
         <div className='singlePost'>
@@ -37,7 +38,7 @@ const SinglePost = () => {
                 </h1>
                 <div className="singlePostInfo">
                     <span>
-                        Author:
+                        <img className='topImg' src={photo} alt="" />
                         <b className="singlePostAuthor">
                             {name}
                         </b>

@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 
 const TopBer = () => {
     const { user, logout } = useAuth() || {};
-    console.log('navbar', user);
+    // console.log('navbar', user);
     return (
         <div className='top'>
             <div className="topLeft">
