@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './HomeBlogs.css';
 
 const HomeBlogs = ({ item }) => {
-    const { _id, image, name, time, dec } = item;
+    const { _id, image, tittle, time, dec } = item;
     return (
         <Link className="link" to={`blogs/${_id}`}>
             <div className='post'>
@@ -19,7 +19,7 @@ const HomeBlogs = ({ item }) => {
                     </div>
                     <span className="postTitle">
                         <Link className="link" to={`blogs/${_id}`}>
-                            {name}
+                            {tittle}
                         </Link>
                     </span>
                     <hr />
