@@ -10,7 +10,7 @@ const Login = () => {
         <div className='login'>
             <span className="loginTitle">Login in <span className='google'>Google</span></span>
             <GoogleButton
-                onClick={() => signInWithGoogle()}
+                onClick={() => { console.log('click'); }}
             />
         </div>
     );
