@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Post.css';
 
 const Post = ({ item }) => {
-    const { _id, image, name, time, dec } = item;
+    const { _id, image, tittle, time, dec } = item;
     return (
         <div>
             <Link className="link" to={`${_id}`}>
@@ -20,7 +20,7 @@ const Post = ({ item }) => {
                         </div>
                         <span className="postTitle">
                             <Link className="link" to={`${_id}`}>
-                                {name}
+                                {tittle}
                             </Link>
                         </span>
                         <hr />
