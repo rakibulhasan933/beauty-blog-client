@@ -22,6 +22,9 @@ const TopBer = () => {
                     <Link className="link" to='/contact'>
                         <li className="topListItem">CONTACT</li>
                     </Link>
+                    <Link className="link" to='/blogs'>
+                        <li className="topListItem">BLOGS</li>
+                    </Link>
                     {user.email && <Link className="link" to='/write'>
                         <li className="topListItem">WRITE</li>
                     </Link>}
