@@ -1,8 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopBer.css';
+import auth from '../../firebase.init';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 const TopBer = () => {
+    const [user] = useSignInWithGoogle(auth);
+    console.log(user);
+
+    const logout = () => {
+        signOut(auth);
+    };
     return (
         <div className='top'>
             <div className="topLeft">
@@ -19,24 +28,30 @@ const TopBer = () => {
                     <Link className="link" to='/contact'>
                         <li className="topListItem">CONTACT</li>
                     </Link>
-                    <Link className="link" to='/write'>
+                    {user && <Link className="link" to='/write'>
                         <li className="topListItem">WRITE</li>
-                    </Link>
-                    <Link className="link" to='/login'>
-                        <li className="topListItem">LOGIN</li>
-                    </Link>
+                    </Link>}
                 </ul>
             </div>
             <div className="topRight">
-                <ul className="topList">
+                {user && <button className='buttonLogout' onClick={logout} >LOGOUT</button>}
+                {user ? (
                     <Link className="link" to="/settings">
                         <img
                             className="topImg"
-                            src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                            alt=""
+                            src={photoURL}
+                            alt="man"
                         />
                     </Link>
-                </ul>
+                ) : (
+                    <ul className="topList">
+                        <li className="topListItem">
+                            <Link className="link" to="/login">
+                                LOGIN
+                            </Link>
+                        </li>
+                    </ul>
+                )}
                 <i className="topSearchIcon fas fa-search"></i>
             </div>
         </div>
