@@ -1,22 +1,34 @@
 import React, { useState } from 'react';
+import useAuth from '../../hooks/useAuth';
 import './Write.css';
 
 const Write = () => {
-    const [name, setName] = useState('rakibul');
+    const [name, setName] = useState('');
+    const [photo, setPhoto] = useState('');
     const [tittle, setTittle] = useState('');
     const [dec, setDec] = useState('');
     const [image, setImage] = useState(null);
     const [success, setSuccess] = useState(false);
     const time = new Date();
 
+    const { user } = useAuth() || {};
+
+    const { displayName, photoURL } = user;
+    // console.log('write', displayName, photoURL);
+    setName(displayName);
+    setPhoto(photoURL);
+
+
     const handleSubmit = e => {
         e.preventDefault();
+
 
         if (!image) {
             return;
         }
         const fromData = new FormData();
         fromData.append('name', name);
+        fromData.append('photo', photo);
         fromData.append('tittle', tittle);
         fromData.append('dec', dec);
         fromData.append('image', image);
