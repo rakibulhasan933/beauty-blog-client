@@ -38,7 +38,7 @@ const SinglePost = () => {
                 </h1>
                 <div className="singlePostInfo">
                     <span>
-                        <img className='topImg' src={photo} alt="" />
+                        <img className='CreateImg' src={photo} alt="" />
                         <b className="singlePostAuthor">
                             {name}
                         </b>
