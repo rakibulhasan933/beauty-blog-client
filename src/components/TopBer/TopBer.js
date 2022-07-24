@@ -1,17 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopBer.css';
-import auth from '../../firebase.init';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { signOut } from 'firebase/auth';
+import useAuth from '../../hooks/useAuth';
 
 const TopBer = () => {
-    const [user] = useSignInWithGoogle(auth);
-    console.log(user);
-
-    const logout = () => {
-        signOut(auth);
-    };
+    const { user, logout } = useAuth() || {};
+    console.log('navbar', user);
     return (
         <div className='top'>
             <div className="topLeft">
@@ -28,18 +22,18 @@ const TopBer = () => {
                     <Link className="link" to='/contact'>
                         <li className="topListItem">CONTACT</li>
                     </Link>
-                    {user && <Link className="link" to='/write'>
+                    {user.email && <Link className="link" to='/write'>
                         <li className="topListItem">WRITE</li>
                     </Link>}
                 </ul>
             </div>
             <div className="topRight">
-                {user && <button className='buttonLogout' onClick={logout} >LOGOUT</button>}
-                {user ? (
+                {user.email && <button className='buttonLogout' onClick={logout} >LOGOUT</button>}
+                {user.email ? (
                     <Link className="link" to="/settings">
                         <img
                             className="topImg"
-                            src={photoURL}
+                            src={user.photoURL}
                             alt="man"
                         />
                     </Link>
