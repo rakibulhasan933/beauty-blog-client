@@ -13,6 +13,7 @@ import BlogMain from './Pages/BlogMain/BlogMain';
 import HomeMain from './Pages/HomeMain/HomeMain';
 import Contact from './Pages/Contact/Contact';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PraviteRoute/PraviteRoute';
 
 
 
@@ -29,7 +30,11 @@ const App = () => {
                     <Route path=':id' element={<SinglePost />} />
                     <Route path='settings' element={<Settings />} />
                 </Route>
-                <Route path='/write' element={<Write />} />
+                <Route path='/write' element={
+                    <PrivateRoute>
+                        <Write />
+                    </PrivateRoute>
+                } />
                 <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
