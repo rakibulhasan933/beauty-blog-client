@@ -7,14 +7,14 @@ const Contact = () => {
         <div className='contact'>
             <div className="contactWrapper">
                 <div className="container">
-                    <h3 className='contact-title'>Contact Us</h3>
+                    <h3 className='contact-title label'>Contact Us</h3>
                     <form>
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-                        <label for="lname">Email</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                        <label for="subject">Feedback</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                        <label for="name" className='label'>Name</label>
+                        <input type="text" name="name" placeholder="Your name.." />
+                        <label for="email" className='label'>Email</label>
+                        <input type="email" name="email" placeholder="Your Email.." />
+                        <label for="feedback" className='label'>Feedback</label>
+                        <textarea id="feedback" name="feedback" placeholder="Write something.."></textarea>
 
                         <input type="submit" value="Submit" />
                     </form>
