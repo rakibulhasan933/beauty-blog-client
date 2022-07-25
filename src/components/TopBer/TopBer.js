@@ -33,13 +33,11 @@ const TopBer = () => {
             <div className="topRight">
                 {user.email && <button className='buttonLogout' onClick={logout} >LOGOUT</button>}
                 {user.email ? (
-                    <Link className="link" to="/settings">
-                        <img
-                            className="topImg"
-                            src={user.photoURL}
-                            alt="man"
-                        />
-                    </Link>
+                    <img
+                        className="topImg"
+                        src={user.photoURL}
+                        alt="man"
+                    />
                 ) : (
                     <ul className="topList">
                         <li className="topListItem">

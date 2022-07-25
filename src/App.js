@@ -28,7 +28,6 @@ const App = () => {
                 <Route path='/blogs' element={<BlogMain />}>
                     <Route index element={<Posts />} />
                     <Route path=':id' element={<SinglePost />} />
-                    <Route path='settings' element={<Settings />} />
                 </Route>
                 <Route path='/write' element={
                     <PrivateRoute>
