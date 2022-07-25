@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import TopBer from './components/TopBer/TopBer';
 import Login from './Pages/Login/Login';
-import Settings from './Pages/Settings/Settings';
 import Write from './Pages/Write/Write';
 import SinglePost from './Pages/SinglePost/SinglePost';
 import Footer from './components/Footer/Footer';
