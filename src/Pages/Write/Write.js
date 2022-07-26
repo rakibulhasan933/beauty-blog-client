@@ -47,8 +47,8 @@ const Write = () => {
         <div className="write">
             <img
                 className="writeImg"
-                src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt=""
+                src="https://i.ibb.co/c620b89/pexels-tirachard-kumtanom-733856.jpg"
+                alt="one woman writing"
             />
             <form onSubmit={handleSubmit} className="writeForm">
                 <div className="writeFormGroup">
