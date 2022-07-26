@@ -8,44 +8,40 @@ const SideBer = () => {
             <div className="sidebarItem">
                 <span className="sidebarTittle">ABOUT ME</span>
                 <img
-                    src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+                    src="https://i.ibb.co/JpF1nSV/31671553-2062830170707480-6027634644545961984-n.jpg"
                     alt=""
                 />
                 <p>
-                    Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-                    amet ex esse.Sunt eu ut nostrud id quis proident.
+                    I am a hardworking, confident, enthusiastic Web developer and I want to utilize my knowledge and
+                    personal skills in Web Development.
                 </p>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTittle">CATEGORIES</span>
                 <ul className="sidebarList">
-                    <Link className="link" to="/">
-                        <li className="sidebarListItem">Life</li>
-                    </Link>
-                    <Link className="link" to="/">
-                        <li className="sidebarListItem">Music</li>
-                    </Link>
-                    <Link className="link" to="/">
-                        <li className="sidebarListItem">Sport</li>
-                    </Link>
-                    <Link className="link" to="/">
-                        <li className="sidebarListItem"> Style</li>
-                    </Link>
-                    <Link className="link" to="/">
-                        <li className="sidebarListItem">Tech</li>
-                    </Link>
-                    <Link className="link " to="/">
-                        <li className="sidebarListItem">Cinema</li>
-                    </Link>
+                    <li className="sidebarListItem">Life</li>
+                    <li className="sidebarListItem">Music</li>
+                    <li className="sidebarListItem">Sport</li>
+                    <li className="sidebarListItem"> Style</li>
+                    <li className="sidebarListItem">Tech</li>
+                    <li className="sidebarListItem">Cinema</li>
                 </ul>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTittle">FOLLOW US</span>
                 <div className="sidebarSocial">
-                    <i className="sidebarIcon fab fa-facebook-square"></i>
-                    <i className="sidebarIcon fab fa-instagram-square"></i>
-                    <i className="sidebarIcon fab fa-pinterest-square"></i>
-                    <i className="sidebarIcon fab fa-twitter-square"></i>
+                    <Link className="link" to="/">
+                        <i className="sidebarIcon fab fa-facebook-square"></i>
+                    </Link>
+                    <Link className="link" to="/">
+                        <i className="sidebarIcon fab fa-instagram-square"></i>
+                    </Link>
+                    <Link className="link" to="/">
+                        <i className="sidebarIcon fab fa-pinterest-square"></i>
+                    </Link>
+                    <Link className="link" to="/">
+                        <i className="sidebarIcon fab fa-twitter-square"></i>
+                    </Link>
                 </div>
             </div>
         </div>
