@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         SetLoading(true);
-        fetch('http://localhost:5000/blogs')
+        fetch('https://quiet-atoll-26066.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => {
                 setBlogs(data.slice(0, 4));

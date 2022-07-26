@@ -28,7 +28,7 @@ const Write = () => {
         fromData.append('image', image);
         fromData.append('time', time);
 
-        fetch('http://localhost:5000/createBlogs', {
+        fetch('https://quiet-atoll-26066.herokuapp.com/createBlogs', {
             method: 'POST',
             body: fromData
         })

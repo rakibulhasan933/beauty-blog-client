@@ -10,7 +10,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/blogs/${id}`)
+        fetch(`https://quiet-atoll-26066.herokuapp.com/blogs/${id}`)
             .then(res => res.json())
             .then(data => {
                 setBlogs(data);
