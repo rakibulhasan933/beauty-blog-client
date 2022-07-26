@@ -14,7 +14,7 @@ const Contact = () => {
                         <label for="fname">Name</label>
                         <input type="text" id="fname" name="name" placeholder="Your name.." />
                         <label for="lname">Email</label>
-                        <input type="text" id="lname" name="email" placeholder="Your last name.." />
+                        <input type="text" id="lname" name="email" placeholder="Your email.." />
                         <label for="subject">Feedback</label>
                         <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 
