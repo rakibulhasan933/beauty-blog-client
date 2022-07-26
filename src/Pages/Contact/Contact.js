@@ -1,44 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SideBer from '../../components/SideBer/SideBer';
-import emailjs from '@emailjs/browser';
 import './Contact.css';
-import { useForm } from 'react-hook-form';
 
 const Contact = () => {
-    const { register, formState: { errors } } = useForm();
-    const [emailValidation, setEmailValidation] = useState(true);
-    const [msgValidation, setmsgValidation] = useState(true);
 
-    function sendEmail(e) {
-        e.preventDefault();
-        //console.log('l',e.target.name.value,'l', e.target.email.value);
-        e.target.email.value && e.target.message.value && emailjs.sendForm('service_v1wubeb', 'template_cchny0n', e.target, 'nwObZR03jMMFUK0AS')
-            .then((result) => {
-                alert('Your message send successfully. Thank you!');
-            }, (error) => {
-                alert(error.message);
-            });
-        e.target.email.value ? setEmailValidation(true) : setEmailValidation(false);
-        e.target.message.value ? setmsgValidation(true) : setmsgValidation(false);
-        e.target.email.value && e.target.message.value && e.target.reset();
-    }
 
     return (
         <div className='contact'>
             <div className="contactWrapper">
                 <div className="container">
-                    <h3 className='contact-title label'>Contact Us</h3>
-                    <form onSubmit={sendEmail}>
-                        <label for="name" className='label'>Name</label>
-                        <input className='form-control' {...register("name", { required: true })} />
-                        {errors.name && <span>Name is required</span>}<br />
-                        <label for="email" className='label'>Email</label>
-                        <input className='form-control' {...register("email", { required: true })} />
-                        {emailValidation ? '' : <span style={{ color: 'red' }}>Email is required</span>}<br />
-                        <label for="feedback" className='label'>Feedback</label>
-                        <textarea className='form-control' {...register("message", { required: true })} />
-                        {msgValidation ? '' : <span style={{ color: 'red' }}>This fiels is required</span>}<br />
-                        <input type="submit" value="Send Message" />
+                    <h3 className='contact-title'>Contact Us</h3>
+                    <form>
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Your name.." />
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="email" placeholder="Your last name.." />
+                        <label for="subject">Feedback</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+                        <input type="submit" value="Submit" />
                     </form>
                 </div>
             </div>
