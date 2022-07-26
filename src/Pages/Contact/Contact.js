@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='contact'>
             <div className="contactWrapper">
                 <div className="container">
-                    <h3 className='contact-title'>Contact Us</h3>
+                    <h3 className='contact-title label'>Contact Us</h3>
                     <form>
                         <label for="fname">Name</label>
                         <input type="text" id="fname" name="name" placeholder="Your name.." />
