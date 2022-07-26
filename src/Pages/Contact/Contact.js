@@ -9,6 +9,20 @@ const Contact = () => {
     const [emailValidation, setEmailValidation] = useState(true);
     const [msgValidation, setmsgValidation] = useState(true);
 
+    function sendEmail(e) {
+        e.preventDefault();
+        //console.log('l',e.target.name.value,'l', e.target.email.value);
+        e.target.email.value && e.target.message.value && emailjs.sendForm('service_v1wubeb', 'template_cchny0n', e.target, 'nwObZR03jMMFUK0AS')
+            .then((result) => {
+                alert('Your message send successfully. Thank you!');
+            }, (error) => {
+                alert(error.message);
+            });
+        e.target.email.value ? setEmailValidation(true) : setEmailValidation(false);
+        e.target.message.value ? setmsgValidation(true) : setmsgValidation(false);
+        e.target.email.value && e.target.message.value && e.target.reset();
+    }
+
     return (
         <div className='contact'>
             <div className="contactWrapper">
